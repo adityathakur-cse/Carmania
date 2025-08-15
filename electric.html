@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Electric Cars</title>   
+        <style>
+            * {
+                scroll-behavior: smooth;
+                list-style: none;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+            }
+           .navbar {
+    background:#1a1a1a; color:#fff;
+    position: sticky; top:0; z-index:1000;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 16px; height:64px;
+  }
+  .brand {
+    color:#ff8c00; font-weight:700; font-size:1.4rem;
+    text-decoration:none;
+  }
+  .menu-toggle {
+    background:transparent; border:0; color:#fff;
+    font-size:1.6rem; cursor:pointer; display:none;
+  }
+  .nav-menu { list-style:none; display:flex; align-items:center; }
+  .nav-menu > li { position:relative; }
+  .nav-menu a {
+    display:block; padding:14px 16px;
+    text-decoration:none; color:#fff; border-radius:6px;
+    transition: background .25s ease;
+  }
+  .nav-menu a:hover { background:#ff8c00; color:#1a1a1a; }
+
+  /* Dropdown */
+  .dropdown {
+    position:absolute; top:100%; left:0;
+    min-width:180px; background:#1a1a1a;
+    display:none; flex-direction:column;
+    box-shadow:0 8px 24px rgba(0,0,0,.25); border-radius:6px;
+  }
+  .dropdown a { padding:12px 14px; font-size:.95rem; }
+  .dropdown a:hover { background:#ff8c00; color:#1a1a1a; }
+  .has-dropdown.open > .dropdown { display:flex; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .menu-toggle { display:block; }
+    .nav-menu {
+      position:absolute; left:0; right:0; top:64px;
+      background:#1a1a1a; flex-direction:column;
+      display:none; padding:8px;
+    }
+    .nav-menu.show { display:flex; }
+    .dropdown { position:static; box-shadow:none; }
+  }
+
+  /* Other styles */
+  marquee { background-color: #011F5B; color: whitesmoke; padding:5px 0; }
+  .img img { width:50%; margin:auto; display:block; }
+  .re { display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; }
+  .ab {
+    background:#3D0C02; color:#fff; padding:10px;
+    border-radius:8px; transition:transform 0.2s;
+  }
+  .ab:hover { transform: translateY(-8px); }
+  .ab img { width:100%; border-radius:8px 8px 0 0; }
+  .ab a {
+    display:inline-block; margin-top:10px;
+    padding:5px 12px; background:#3636ea; color:#fff;
+    border-radius:20px; text-decoration:none;
+  }
+  .ab a:hover { background:#ff920e; }
+  .con { display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin:40px; }
+  .container {
+    background:#000; color:#fff; border-radius:15px;
+    padding:20px; text-align:center;
+  }
+  .container img { border-radius:50%; }
+  .checked { color:orange; }
+            .re {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                text-decoration: none;
+            }
+            .re:hover {
+                transform: translateY(-8px);
+            }
+            .ab {
+                display: inline-table;
+                flex-wrap: wrap;
+                text-align: center;
+                margin: 10px;
+                justify-content: space-around;
+                background-color:#3D0C02;
+                color: whitesmoke;
+                }
+            .ab a{
+                text-decoration: none;
+                border: 1px solid rgb(54, 54, 234);
+                background-color: rgb(54, 54, 234);
+                color: whitesmoke;
+                border-radius: 20px;
+            }
+            .ab a:hover{
+                background-color: #ff920e;
+                border: 2px solid #ff920e ;                
+            }
+            .ab img{
+                border-radius: 15px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                height: 200px;
+                width: 260px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+  <nav class="navbar">
+    <a href="index.html" class="brand">CAR MANIA</a>
+    <button class="menu-toggle">☰</button>
+    <ul class="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li class="has-dropdown">
+        <a href="#">EXPLORE</a>
+        <ul class="dropdown">
+          <li><a href="suv.html">SUV</a></li>
+          <li><a href="lux-suv.html">Luxury SUV</a></li>
+          <li><a href="sedan.html">Sedan</a></li>
+          <li><a href="llux-sedan.html">Luxury Sedan</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">FUEL</a>
+        <ul class="dropdown">
+          <li><a href="petrol.html">Petrol</a></li>
+          <li><a href="cng.html">CNG</a></li>
+          <li><a href="diesel.html">Diesel</a></li>
+          <li><a href="electric.html">Electric</a></li>
+        </ul>
+      </li>
+      <li><a href="us.html">ABOUT US</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+</header>
+        <div class="content">
+            <h2 style="background-color: rgb(177, 218, 255);">ELECTRIC CAR's</h2> <br>  
+        </div>
+        <div class="re">
+            <div class="ab"><img src="https://i.pinimg.com/564x/a0/d3/df/a0d3dfcd6ca1c656a1a7599397f7578b.jpg"><br><b>Tata Nexon EV</b><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://i.pinimg.com/564x/7e/d9/48/7ed948f911919b2706945943b6fb760e.jpg"><br><b>Volvo C40 Recharge</b><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://i.pinimg.com/564x/83/69/92/836992ff050f16f0740c2d0c70b0ffa2.jpg"><br><b>Tata Tiago EV</b><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://i.pinimg.com/564x/b5/22/42/b522423799214251298a2ba90eb51266.jpg"><br><b>MG Comet EV</b><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://i.pinimg.com/564x/54/5e/55/545e55c3140e0e415b6b5f3106a18b85.jpg"><br><b>Hyundai Kona EV</b><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+            <div class="ab"><img src="https://i.pinimg.com/564x/9b/c1/8c/9bc18cb804d5bfc1ffd48e5af7366449.jpg"><br><b>Audi e-tron</b><hr>
+                <a href="rent.html">&nbsp;&nbsp;&nbsp;Rent Now&nbsp;&nbsp;&nbsp;</a><br>.
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const menuToggle = document.querySelector('.menu-toggle');
+              const navMenu = document.querySelector('.nav-menu');
+            
+              menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('show');
+              });
+          
+              document.querySelectorAll('.has-dropdown > a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  const li = link.parentElement;
+                  li.classList.toggle('open');
+                });
+              });
+          
+              document.addEventListener('click', (e) => {
+                if (!e.target.closest('.navbar')) {
+                  document.querySelectorAll('.has-dropdown').forEach(li => li.classList.remove('open'));
+                  navMenu.classList.remove('show');
+                }
+              });
+            });
+        </script>
+    </body>
+</html>
